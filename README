@@ -2,5 +2,4 @@ This code is a GPU implementation of the wave-wave nonlinear interaction source 
 
 A thread corresponding to a grid point is used for computation, and index access is taken when accessing the original Fortran array, such as the array e_array with dimensions [k_length,j_length,point_number], and the access method is e_array[(pnt_id)*j_length*k_ length+(j11-1)*k_length+kp-1].
 
-Translated with DeepL.com (free version)
 
