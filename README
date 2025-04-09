@@ -1,5 +1,5 @@
 This code is a GPU implementation of the wave-wave nonlinear interaction source function from "LAGFD-WAM numerical wave model--I. Basic physical model" and "MASNUM ocean wave numerical model in spherical coordinates and its application". 
 
-This source function is engaged into the third-generation wave model MASNUM(Marine Science and Numerical Modeling).
+This source function is integrated into the third-generation wave model MASNUM(Marine Science and Numerical Modeling).
 
 In this GPU implementation, each grid point maps to a single thread, and using index to access the original Fortran-style array e_array which has dimensions [k_length,j_length,point_number], using a flattened 1D index calculated as e_array[(point_id)*j_length*k_ length+(j_id-1)*k_length+k_id-1].
